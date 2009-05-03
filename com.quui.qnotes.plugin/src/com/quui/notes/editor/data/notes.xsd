@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/notes" xmlns:tns="http://www.example.org/notes" elementFormDefault="qualified">
+
+    <element name="notes" type="tns:notes"></element>
+    
+    <complexType name="notes">
+    	<sequence maxOccurs="unbounded" minOccurs="0">
+    		<element name="note" type="tns:note"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="note">
+    	<attribute name="public" type="string" use="required"></attribute>
+    	<attribute name="title" type="string" use="required"></attribute>
+    	<attribute name="date" type="string" use="required"></attribute>
+    	<attribute name="tag" type="string" use="required"></attribute>
+    </complexType>
+</schema>

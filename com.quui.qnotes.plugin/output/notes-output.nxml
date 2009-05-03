@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<notes>
+  <note public="false" title="Welcome" date="2008-12-03" tag="sample">
+'''Welcome!'''
+
+The Eclipse Notebook supports embedded Graphviz and Wikitext, which is as easy as:
+
+dot: digraph{ node[shape=box] rankdir=LR 1->2->three[style=dashed] } :dot
+
+* 1
+* 2
+* 3 
+
+And [http://http://www.graphviz.org/ Graphviz] rocks!
+    </note>
+</notes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Notebook"
+            extensions="xml,nxml"
+            icon="icons/agent.gif"
+            contributorClass="com.quui.notes.editor.ui.mpe.EditorContributor"
+            class="com.quui.notes.editor.ui.mpe.Editor"
+            id="com.quui.notes.editor.NotesMultiPageEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Notebook"
+            id="com.quui.notes.editor">
+      </category>
+      <wizard
+            name="Notebook"
+            icon="icons/agent.gif"
+            category="com.quui.notes.editor"
+            class="com.quui.notes.editor.ui.wizards.NotesNewWizard"
+            id="com.quui.notes.editor.wizards.WebnotesNewWizard">
+      </wizard>
+   </extension>
+
+</plugin>

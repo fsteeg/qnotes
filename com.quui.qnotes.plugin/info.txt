@@ -1,0 +1,1 @@
+- For some weird reason, on non-Linux systems the entry "-Dfile.encoding=UTF-8" needs to be in eclipse.ini
